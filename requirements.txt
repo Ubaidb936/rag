@@ -1,0 +1,16 @@
+torch 
+bitsandbytes
+transformers
+peft
+accelerate
+faiss-gpu
+datasets
+trl
+gradio
+langchain 
+sentence-transformers 
+pandas 
+pypdf
+openai
+langchain-community
+langchain-openai
