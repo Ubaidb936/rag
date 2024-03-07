@@ -1,0 +1,90 @@
+question,ragScore,baseScore
+"What was the most common database model before the relational model?
+",4,5
+"How are hierarchical databases visually represented?
+",4,4
+"What is the reason large institutions are reluctant to switch to newer database products?
+",4,3
+"What significant problem does a relational database minimize?
+",4,4
+"What is the role of a primary key in a relational database?
+",4,5
+"What is one of the main advantages of a well-designed relational database?
+",4,3
+"What is a statement of scope in the context of a database project?
+",5,5
+"What is Microsoft's desktop database?
+",4,5
+"What is one reason why a database is needed for the tutoring program mentioned in the context?
+",4,5
+"What is the purpose of the scope in a project?
+",5,5
+"What is the purpose of the initial interview between a database developer and a client?
+",4,4
+"How can questions help clarify the needs of a client for a database related to tutoring services?
+",5,3
+"What information does the tutoring center need to track for scheduling tutors and students?
+",4,4
+"What is an entity in the context of a database?
+",5,5
+"How many major topics should a database ideally focus on?
+",4,3
+"What will the tutoring database at the college track for the tutoring program?
+",4,3
+"What is one of the purposes of the database in the context?
+",3,2
+"How can a weighted average be used to estimate time for database development tasks?
+",5,4
+"What is one feature that Sharon plans to add to the database to help identify where new tutors are needed?
+",3,3
+"What is the next step in the tutoring database project after creating the database?
+",5,3
+"What information will the tutoring database at the college store about students?
+",4,3
+"Why is documentation important in a database enterprise?
+",5,3
+"What are the two main aspects that need to be documented when documenting a database?
+",5,4
+"What is the purpose of documenting the original intent and business rules when creating a database?
+",5,5
+"What is a relational database?
+",5,5
+"What is an alternative data model to relational databases that is based on XML?
+",5,5
+"What are the major themes for the dentist office database mentioned in Practice 6?
+",5,4
+"What is one requirement for Vince's database related to tracking his business expenses?
+",5,3
+"What is a ""site"" license in the context of software tracking?
+",4,5
+"What are the main pieces of information that the hospital's database needs to track for the double blind depression drug test?
+
+",4,3
+"What is the purpose of identifying important nouns in the scenario descriptions when developing a potential database?
+",5,4
+"Who are the primary people to interview when gathering information for a database project?
+",4,4
+"Who are the potential stakeholders that should be considered when creating a new database?
+",5,4
+"What is the purpose of forms and reports in a business setting?
+",5,5
+"What is the purpose of a Tutor Session Report Form?
+",4,4
+"What is the purpose of a Management Information System (MIS) database?
+",5,4
+"What is the purpose of a data warehouse in an organization?
+",5,5
+"What is XML and how is it used in data warehousing?
+",5,3
+"What is an example of an open-ended question that can be used when conducting interviews to gather opinions and needs of stakeholders for a new system?
+",4,3
+"How can a company ensure client data confidentiality?
+",3,5
+"What is an advantage of using questionnaires over interviews?
+",4,4
+"What is an advantage of using questionnaires over interviews?
+",4,4
+"What is an advantage of work shadowing in business processes?
+",3,3
+"What is the definition of a ""transaction database"" in the context of database management?
+",5,5

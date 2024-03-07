@@ -72,7 +72,7 @@ evaluator_name = "GPT4"
 
 
 
-answer_path = "eval.csv"
+answer_path = "evalDatasets/StocksQAWithZephr.csv"
 df = pd.read_csv(answer_path) 
 answers = Dataset.from_pandas(df)
     
@@ -84,26 +84,33 @@ for experiment in answers:
     
     i = i + 1
     
-    eval_prompt = evaluation_prompt_template.format_messages(
+    eval_prompt_rag = evaluation_prompt_template.format_messages(
         instruction=experiment["question"],
         response=experiment["ragAnswer"],
         reference_answer=experiment["correctAnswer"],
     )
 
+    eval_prompt_base = evaluation_prompt_template.format_messages(
+        instruction=experiment["question"],
+        response=experiment["baseModelAnswer"],
+        reference_answer=experiment["correctAnswer"],
+    )
+
 
     
-    eval_result = eval_chat_model.invoke(eval_prompt)
-    feedback, score = [item.strip() for item in eval_result.content.split("[RESULT]")]
+    eval_result = eval_chat_model.invoke(eval_prompt_rag)
+    rag_feedback, rag_score = [item.strip() for item in eval_result.content.split("[RESULT]")]
 
+    eval_result = eval_chat_model.invoke(eval_prompt_base)
+    base_feedback, base_score = [item.strip() for item in eval_result.content.split("[RESULT]")]
 
     
     answersWithEvaluationScores.append(
             {
                 "question": experiment["question"],
-                "ragAnswer": experiment["ragAnswer"],
-                "correctAnswer": experiment["correctAnswer"],
-                "score": score,
+                "ragScore": rag_score,
+                "baseScore":base_score, 
             }
         )
     df = pd.DataFrame.from_dict(answersWithEvaluationScores)
-    df.to_csv("scores.csv", index=False)
+    df.to_csv("Scores/StocksQAWithZephr.csv", index=False)
