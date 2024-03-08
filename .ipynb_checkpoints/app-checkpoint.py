@@ -1,3 +1,4 @@
+##Importing Dependencies.
 import shutil
 import requests
 import sys
@@ -8,27 +9,23 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.docstore.document import Document as LangchainDocument
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_community.llms import HuggingFaceHub
+import gradio as gr
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
 import config 
 
 
-##Loading the file path
+
+
+
+##Loading Pdf and Precessing it
 pdfPath = config.pdfPath
-
-
 if pdfPath is None:
     raise ValueError("pdfPath is None. Please set the  pdf path in config.py.")
-
-##Loading the text file
 loader = PyPDFLoader(pdfPath)
-
-
-
-##splitting the text file
 text_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=600,  
-        chunk_overlap=60,
+        chunk_size=1000,  
+        chunk_overlap=200,
         add_start_index=True,
         separators=["\n\n", "\n", ".", " ", ""],
     )
@@ -39,9 +36,7 @@ try:
 except Exception as e:
     raise ValueError("An error occurred:", e)
 
-
-
-##Loading the embedding Model
+##creating Vector DB
 from langchain.vectorstores import FAISS
 from langchain.embeddings import HuggingFaceEmbeddings
 
@@ -49,11 +44,7 @@ embeddingModelName = "BAAI/bge-base-en-v1.5"
 
 embeddingModel = HuggingFaceEmbeddings(model_name=embeddingModelName)
 
-try:
-    db = FAISS.from_documents(langchain_docs, embeddingModel)
-except Exception as e:
-    raise ValueError("An error occurred:", e)
-
+db = FAISS.from_documents(langchain_docs, embeddingModel)
 
 
 
@@ -70,11 +61,14 @@ bnb_config = BitsAndBytesConfig(
     bnb_4bit_compute_dtype=torch.bfloat16
 )
 
-try:
-    model = AutoModelForCausalLM.from_pretrained(model_name, quantization_config=bnb_config)
-    tokenizer = AutoTokenizer.from_pretrained(model_name)
-except Exception as e:
-    raise ValueError("An error occurred:", e)
+model = AutoModelForCausalLM.from_pretrained(model_name, quantization_config=bnb_config)
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+
+
+
+
+
+
 
 
 
@@ -83,6 +77,7 @@ from langchain.llms import HuggingFacePipeline
 from langchain.prompts import PromptTemplate
 from transformers import pipeline
 from langchain_core.output_parsers import StrOutputParser
+from langchain.chains import LLMChain
 
 text_generation_pipeline = pipeline(
     model=model,
@@ -93,6 +88,7 @@ text_generation_pipeline = pipeline(
     repetition_penalty=1.1,
     return_full_text=True,
     max_new_tokens=200,
+    pad_token_id=tokenizer.eos_token_id,
 )
 
 llm = HuggingFacePipeline(pipeline=text_generation_pipeline)
@@ -100,7 +96,6 @@ llm = HuggingFacePipeline(pipeline=text_generation_pipeline)
 prompt_template = """
 <|system|>
 Answer the question based on your knowledge. Use the following context to help:
-
 {context}
 
 </s>
@@ -116,37 +111,52 @@ prompt = PromptTemplate(
     template=prompt_template,
 )
 
-llm_chain = prompt | llm | StrOutputParser()
 
-
-
+llm_chain = LLMChain(llm=llm, prompt=prompt)
 
 ##Creating Context Chain
 from langchain_core.runnables import RunnablePassthrough
 
-retriever = db.as_retriever()
-
-rag_chain = (
- {"context": retriever, "question": RunnablePassthrough()}
-    | llm_chain
-)
 
 
 
+
+
+##Launching Gradio
 import gradio as gr
 
-def predict(type, question):
+def predict(type, limit, question):
+    retriever = db.as_retriever(search_type="similarity_score_threshold", search_kwargs={"score_threshold": limit})
+    rag_chain = ({"context": retriever, "question": RunnablePassthrough()}| llm_chain)
+    if type == "Context":
+        ragAnswer = rag_chain.invoke(question)
+        context = ragAnswer["context"]
+        ans = "Context loaded from most to least in similarity search:"
+        i = 1
+        for c in context:
+            content = c.page_content.replace('\n', ' ')
+            ans += "\n\n" + f"context {i}:" + "\n\n" + content
+            i += 1
+        return ans
+        
     if type == "Base":
         ans = llm_chain.invoke({"context":"", "question": question})
         return ans
     else:
-        ans = rag_chain.invoke(question)
-        return ans    
+        res = rag_chain.invoke(question)
+        context = res["context"]
+        if len(context) == 0:
+            ans = "Please ask questions related to the documents....."
+        else:
+            ans = res["text"]
+        return ans 
+           
 
 pred = gr.Interface(
     fn=predict,
     inputs=[
-        gr.Radio(['Base', 'Context'], label="Select One"),
+        gr.Radio(['Context', 'BaseModel','RAG'], value = "Context", label="Select Search Type"),
+        gr.Slider(0.1, 1, value=0.5, label="Degree of Similarity"),
         gr.Textbox(label="Question"),
     ],
     outputs="text",
@@ -154,6 +164,11 @@ pred = gr.Interface(
 )
 
 pred.launch(share=True)
+
+
+
+
+
 
 
 
