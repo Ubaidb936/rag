@@ -1,0 +1,496 @@
+question,llmScore
+"How does Sharon use UML diagrams in the database design process?
+",3
+"What are the main events in the development of SQL?
+",3
+"What are the responsibilities of someone analyzing security needs for a database?
+",3
+"What database-related topics can Sharon tutor in according to the passage?
+",3
+"What is a simple form of an electronic database?
+",3
+"What was the most common database model before the relational model?
+",4
+"How are hierarchical databases visually represented?
+",4
+"What is the reason large institutions are reluctant to switch to newer database products?
+",5
+"What significant problem does a relational database minimize?
+",5
+"What is the role of a primary key in a relational database?
+",4
+"What is one of the main advantages of a well-designed relational database?
+",3
+"What is a statement of scope in the context of a database project?
+",5
+"What is Microsoft's desktop database?
+",3
+"What is one reason why a database is needed for the tutoring program mentioned in the context?
+",4
+"What is the purpose of the scope in a project?
+",4
+"What is the purpose of the initial interview between a database developer and a client?
+",4
+"How can questions help clarify the needs of a client for a database related to tutoring services?
+",3
+"What information does the tutoring center need to track for scheduling tutors and students?
+",3
+"What is an entity in the context of a database?
+",5
+"How many major topics should a database ideally focus on?
+",3
+"What will the tutoring database at the college track for the tutoring program?
+",4
+"What is one of the purposes of the database in the context?
+",3
+"How can a weighted average be used to estimate time for database development tasks?
+",3
+"What is one feature that Sharon plans to add to the database to help identify where new tutors are needed?
+",3
+"What is the next step in the tutoring database project after creating the database?
+",3
+"What information will the tutoring database at the college store about students?
+",3
+"Why is documentation important in a database enterprise?
+",4
+"What are the two main aspects that need to be documented when documenting a database?
+",4
+"What is the purpose of documenting the original intent and business rules when creating a database?
+",5
+"What is a relational database?
+",4
+"What is an alternative data model to relational databases that is based on XML?
+",4
+"What are the major themes for the dentist office database mentioned in Practice 6?
+",3
+"What is one requirement for Vince's database related to tracking his business expenses?
+",3
+"What is a ""site"" license in the context of software tracking?
+",5
+"What are the main pieces of information that the hospital's database needs to track for the double blind depression drug test?
+
+",3
+"What is the purpose of identifying important nouns in the scenario descriptions when developing a potential database?
+",4
+"Who are the primary people to interview when gathering information for a database project?
+",3
+"Who are the potential stakeholders that should be considered when creating a new database?
+",3
+"What is the purpose of forms and reports in a business setting?
+",5
+"What is the purpose of a Tutor Session Report Form?
+",4
+"What is the purpose of a Management Information System (MIS) database?
+",4
+"What is the purpose of a data warehouse in an organization?
+",4
+"What is XML and how is it used in data warehousing?
+",5
+"What is an example of an open-ended question that can be used when conducting interviews to gather opinions and needs of stakeholders for a new system?
+",3
+"How can a company ensure client data confidentiality?
+",5
+"What is an advantage of using questionnaires over interviews?
+",4
+"What is an advantage of using questionnaires over interviews?
+",4
+"What is an advantage of work shadowing in business processes?
+",3
+"What is the definition of a ""transaction database"" in the context of database management?
+",5
+"What is the importance of documenting the information-gathering process in database development?
+",4
+"Who worked for the company from June 1, 2009 to December 1, 2009 and had a salary of 1,450.00?
+",4
+"How does Vince, a record store owner, determine the price of used vinyl records?
+",3
+"What is the pricing unit for the ""MS Site"" license type?
+",1
+"What is one task that a software management team member at Grandfield College does when processing software installation requests?
+",5
+"What is an important step Bill takes when developing a database?
+",3
+"What is a database requirement related to legal and privacy reasons in the Tutoring database?
+",5
+"What is an essential requirement for most databases to protect confidential data?
+",5
+"What is a requirement in the context of a database?
+",3
+"What are some database requirements for the tutoring administrator in the context?
+",3
+"Who should have select access to all the data in the database?
+",5
+"What is a potential issue with adding security considerations to a database as an afterthought?
+",4
+"What kind of data can a tutor modify in the database?
+",4
+"What permissions are needed for tutors to enter their monthly schedules in the database?
+",4
+"What is the purpose of business rules in the context of database design?
+",4
+"How can business rules related to data acquisition, storage, and usage be enforced in a database?
+",3
+"What is the difference between an attribute and data in a database?
+",4
+"What information does the database need to store about each tutor?
+",4
+"What is the definition of a candidate key in a database?
+",5
+"What are the two types of keys that can be used to ensure uniqueness and identification of records in a database?
+",3
+"What is a unique identifier for a tutor, according to the context?
+",3
+"What is the role of requirements and business rules in database development?
+",5
+"What is a surrogate key in the context of databases?
+",5
+"What is one major issue with the current volunteer management system in the animal shelter?
+",4
+"What are the four tasks to be done in analyzing materials for a database project?
+",2
+"What is the initial step in creating a database entity relationship model?
+",4
+"What is the purpose of separating the logical design from the physical design in a database system?
+",4
+"How are relationships between entities represented in Microsoft Visio by default?
+",5
+"What does the ""crow's foot"" represent in database design?
+",5
+"Why is it important to be consistent in naming database objects?
+",5
+"What is a common convention for naming primary keys in a database?
+",3
+"What is the issue with having TutorCourse1, TutorCourse2, and TutorCourse3 attributes in a Tutor entity?
+
+",4
+"What is the relationship between Tutor and Course entities in this context?
+",3
+"What is a use case for a one-to-one relationship in a database?
+",3
+"How is a one-to-one relationship used in a security structure?
+",4
+"What is a common relationship type in relational databases?
+",3
+"How does creating a ""cross relationship"" in a database design affect the entry of data into the tables?
+",3
+"What is the phone number for the Accounting department according to the given context?
+",2
+"What is the price of the Time magazine with the key TM2K1 in the given table?
+",1
+"What is an identifying relationship in database design?
+",5
+"How do composite keys and surrogate keys differ in terms of data integrity and redundancy?
+",5
+"What do database specialists recommend regarding data redundancy and data integrity?
+",4
+"What is the definition of cardinality in a database context?
+",5
+"What is the purpose of lookup entities in a database?
+",5
+"What is a common type of weak entity relationship besides the one where the Dependent entity depends on the Employee for meaning?
+",3
+"What is a weak entity in the context of a database?
+",5
+"What is the purpose of the Request entity in the given database design?
+",3
+"What is the difference between logical design and physical design in the context of database design?
+",4
+"What is the first step in creating a logical design of Vince's database?
+",4
+"What is the fourth step in creating a logical data model using crow's feet notation?
+",3
+"What is one of the steps to create a logical design of a database?
+",4
+"What is the importance of defining entities and attributes in a database?
+",3
+"What is an important strategy when creating Entity Relationship Diagrams (ERDs)?
+",3
+"What is the process of removing anomalies and redundancies from database design called?
+",3
+"What issue arises when a database stores the same data in multiple places?
+",4
+"What is a deletion anomaly in the context of databases?
+",5
+"What is the difference between ""entity"" and ""table"" in the context of database design?
+",5
+"What is a potential issue with using a spreadsheet to store redundant data?
+",3
+"What is one problem with having a list of songs in a single column in a database table?
+",3
+"How does storing song information in separate columns like Track1, Track2, Track3, etc. violate the First Normal Form?
+",5
+"Why is it problematic to have a list of values in a single attribute in a database?
+",5
+"What is the BuildingAddress for the office of the person with ContactKey 6 in the Contact Table?
+",1
+"How should multiple notes related to a request be handled in a database design to conform to First Normal Form?
+",5
+"How does Second Normal Form (2NF) remove functional dependencies in a database?
+
+",4
+"What are the two distinct types of contacts in the Contact spreadsheet example?
+",2
+"How should the repeated ""Building Code"", ""Building Name"", and ""Building Address"" attributes in the Employee and Department entities be handled?
+",3
+"What issue can arise if student information is repeated with every request they make in the given context?
+",3
+"What is the definition of Third Normal Form in database design?
+",5
+"What is the function of the ArtistCountry field in the given Track Table?
+",3
+"What is the BuildingName and BuildingAddress for BuildingKey 1 in the context provided?
+",1
+"Why is it redundant to include StudentLastName in the Session entity?
+",5
+"How can a many-to-many relationship between Student and Course entities be properly modeled in a database?
+",4
+"What is one attribute of the Tutor entity in the normalized Tutor ERD?
+",3
+"What unique identifier is given to all tutors, regardless of their student status, in the context of building a database?
+",5
+"What is the purpose of denormalization in a database?
+",5
+"What is the fourth step in the process of database normalization?
+",4
+"What is an important step in the database design process before beginning to build the database for Vince's Vinyl, Grandfield College IT Department, and Westlake Research Hospital?
+
+",3
+"What is the trick to ensure a database design is in Third Normal Form?
+",4
+"What is a factor Sharon considered when deciding between database management systems?
+",3
+"What are crucial factors to consider when choosing a database management system?
+",3
+"What are some limitations of free RDBMSs like SQL Server and Oracle Express?
+",3
+"Which database management systems (DBMS) typically support enterprise-level features like failover, load balancing, log shipping, and mirroring?
+",4
+"What is one limitation of using Microsoft Access for creating a database application?
+",3
+"What are the minimum number of files an SQL Server database must have?
+",3
+"What are the file extensions for the two files in a SQL Server database?
+",4
+"What is the range of values that can be stored in the 'smallmoney' data type?
+",2
+"When does using fixed-length data types result in more disk space usage compared to variable-length data types?
+",5
+"What data type does Sharon choose to store student ID numbers and why?
+",4
+"What is the data type and maximum length of the TutorLastName column in the Tutor table?
+",4
+"How does a null value affect the calculation of an average in a database?
+",5
+"What does a null value represent in the context of computer programming?
+",5
+"What is an alternative way to represent unknown data in older databases that do not support nulls?
+",3
+"What must Sharon ensure for the foreign key constraint to work when creating the Student table?
+",2
+"How does a composite key get created in the database designer?
+",3
+"What is the data type and nullability of the SessionDateKey column in the Session table?
+",3
+"What is the maximum storage capacity of the ""MAX"" data type in SQL Server?
+",1
+"How is a relationship established between two tables in a database diagram?
+",3
+"How is a relationship represented in a diagram when one table is associated with multiple entries in another table?
+",4
+"What is the purpose of enforcing referential integrity in a database?
+",4
+"What happens to related foreign keys in a child table when the primary key of a row in the parent table is changed in a database?
+",3
+"What are some examples of sample data for a Course table?
+",4
+"What are the different ethnicities included in the 'Asian' category according to the provided context?
+",4
+"When was the ITC255 session held according to the given table data?
+",1
+"What is the purpose of creating a separate data dictionary in a database system?
+",4
+"What are the steps to create and document a new database in SQL Server?
+
+",5
+"What should be the data type and precision of primary and foreign keys in a database?
+",5
+"What is the main purpose of SQL in the context of a relational database?
+",4
+"When was the first version of SQL developed?
+",4
+"What kind of language is SQL and how does it differ from procedural languages?
+",4
+"What is the traditional formatting style for SQL keywords?
+",4
+"Who are the students with non-null email addresses in the 'Student' table?
+",3
+"How can you return all columns in an SQL table using a wildcard character?
+",4
+"How does SQL handle division when both values are integers?
+",4
+"How can you change the label for a result instance in SQL?
+",5
+"How does Sharon modify her SQL query to sort the Session table by two keys?
+",3
+"How are the sessions in the given result set sorted primarily?
+",3
+"How is the WHERE clause used in SQL to filter rows?
+",4
+"How should character values be enclosed in a WHERE clause in SQL Server?
+",3
+"Why is the LIKE operator considered expensive in terms of processing and CPU time?
+",5
+"How does the BETWEEN keyword function in SQL?
+",4
+"How does the SQL keyword ""AND"" behave when used to combine two conditions?
+",5
+"How can you select all customers who are not in a specific city using SQL?
+",4
+"What is the function used in SQL to return the current date and time?
+",3
+"How can you count only the unique/distinct values in a column using aggregate functions in SQL?
+",4
+"How does the GROUP BY clause resolve the conflict between single-row and multiple-row values in SQL?
+",5
+"How can a tutor with less than four sessions scheduled be selected from a database table?
+",4
+"What is the specific flavor of SQL used in the example?
+",3
+"How does Sharon modify her SQL query to display the number of hours for a specific month and year?
+",4
+"How does the WHERE clause affect this SQL query's execution?
+",3
+"What is the result of an inner join in SQL?
+",3
+"What is the common schema name used in SQL Server for table and database objects ownership?
+",4
+"What is the difference between INNER JOIN and equi join syntax in SQL?
+",5
+"What is a cross join in SQL?
+",5
+"How does a left outer join differ from an inner join in SQL?
+",5
+"What is a requirement for entering data into the StudentCourse table in the given context?
+",2
+"What is the basic syntax for an INSERT statement in SQL?
+",4
+"How does Sharon insert multiple courses for a student in a SQL database?
+",3
+"How does a student add their information to a Session row in the database?
+",4
+"What is the basic syntax of an UPDATE statement in SQL?
+",5
+"How can a trigger in a database respond to more than one event at a time?
+",4
+"How does SQL Server make the data from an insert, update, or delete operation available inside a trigger?
+
+",4
+"How does Sharon assign a value to the ""@Maximum"" variable in SQL Server?
+",2
+"How should one document a testing plan for a database?
+",4
+"What does the SQL keyword ""DISTINCT"" do when used with the SELECT statement?
+",4
+"What type of join returns all the rows from the first table and only matching records from the second table, and is used for finding unmatched data?
+",4
+"What are the types of SQL queries that should be included in a test plan for Wild Wood Apartments and Vince's Vinyl databases?
+
+",2
+"What is a common cause of ambiguous column errors in SQL?
+",3
+"How will users of a database application be differentiated for security purposes?
+",4
+"What are the two key terms to consider when beginning to secure a database?
+",4
+"How does SQL Server authenticate users by default?
+",4
+"How are permissions assigned to a user in SQL Server?
+",5
+"Why does SQL Server use a two-step process for granting permissions?
+",3
+"What permissions does the db\_datareader role grant to a user in SQL Server?
+",5
+"What is the default schema in SQL Server?
+",3
+"How does SQL Server handle user access to database objects?
+",3
+"What are the specific access permissions for the database administrator in the tutor database?
+",4
+"Who will have the responsibility to maintain the database and its objects in the given context?
+",5
+"What permissions are required for a tutor to enter and edit his or her own schedules in the system?
+",3
+"What permissions do unregistered users have in the school's tutoring program database?
+",4
+"What are some potential threats to a database system?
+",3
+"What is a common backup procedure for a small company with a single database and server?
+",3
+"What is a potential risk associated with the tutor role in terms of database security?
+",4
+"What information can the public view in the database?
+",2
+"What are some potential threats to a database beyond user-related activities?
+",3
+"How is authentication typically handled in the database discussed in the context?
+",3
+"What is the purpose of the 'GO' command in SQL Server?
+",4
+"What is a common prefix for user stored procedures in SQL?
+",4
+"How can a developer test a database in a restricted user's environment?
+",2
+"How can a view be used to filter data from tables in a database?
+",4
+"What is the purpose of using a TRY CATCH block in a SQL transaction?
+",4
+"How does one ensure secure interaction between users and a database in this context?
+",4
+"What is the purpose of a disaster recovery plan in the context of database management?
+",5
+"What is the importance of documenting security set up in a database?
+",3
+"What is the process of confirming a user is who he or she claims to be in the context of databases?
+",4
+"What is the purpose of the SQL keyword ""AS"" when used with stored procedures and views?
+",2
+"What is the purpose of using a TRY CATCH block with a TRANSACTION in the provided context?
+",3
+"What is an important consideration for Vince regarding his list of interested customers?
+",2
+"What is an essential security measure for the database used in a double-blind study at WestLake Hospital?
+",4
+"How can stored procedures and views help improve database security?
+",4
+"How do you create relationships in Microsoft Access?
+",3
+"How should one arrange tables when creating relationships in Microsoft Access?
+",4
+"How can I download the SQL Server Express management studio separately?
+",5
+"How can I create a new database in SQL Server using Object Explorer?
+",4
+"Where are the security folders located in SQL Server Express?
+",4
+"What measurement units are available in Microsoft's Visio Professional when creating a Database Model Diagram?
+",3
+"How do you set the cardinality of a relationship in Visio?
+",4
+"How can I set the database type in Visio?
+",3
+"How can I change the default arrow-headed relationships to crow's feet relationships in Visio?
+",4
+"What is the purpose of a linking table in relational design?
+",4
+"What is a weak entity in a relational database?
+",3
+"How does the generalization/specialization pattern prevent excessive nulls in a table?
+",4
+"How does separating the product table from the inventory table prevent a product from disappearing if it is no longer in inventory?
+",5
+"What is the SQL keyword used to mark the start of the body of a View, Stored Procedure, or a Trigger?
+",2
+"What is a Crow's Feet Notation in the context of entity relationship diagrams?
+",4
+"What is a ""crows foot"" in the context of entity relation diagrams?
+",5

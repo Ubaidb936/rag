@@ -68,7 +68,7 @@ evaluator_name = "GPT4"
 
 
 
-answer_path = "evalDatasets/databaseQAWithZephr_Finetuned.csv"
+answer_path = "evalDatasets/stocksQAWithZephr_Finetuned.csv"
 df = pd.read_csv(answer_path) 
 answers = Dataset.from_pandas(df)
     
@@ -98,4 +98,4 @@ for experiment in answers:
             }
         )
     df = pd.DataFrame.from_dict(answersWithEvaluationScores)
-    df.to_csv("Scores/databaseQAWithZephr_FinetunedScores.csv", index=False)
+    df.to_csv("Scores/stocksQAWithZephr_FinetunedScores.csv", index=False)
